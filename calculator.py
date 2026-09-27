@@ -6,13 +6,11 @@ A menu-driven Python calculator built with Git and GitHub branching.
 
 def add(a, b):
     """Return the sum of a and b."""
-    return a + b
-
+    return round(a + b, 2)
 
 def subtract(a, b):
     """Return the difference of a and b."""
     return a - b
-
 
 def get_number(prompt):
     """
@@ -67,10 +65,6 @@ def main():
             if choice == "1":
                 result = add(num1, num2)
                 symbol = "+"
-                print(f"\nResult: {num1} {symbol} {num2} = {result}")
-            elif choice == "2":
-                result = subtract(num1, num2)
-                symbol = "-"
                 print(f"\nResult: {num1} {symbol} {num2} = {result}")
         except ZeroDivisionError as error:
             print(f"\nError: {error}")
