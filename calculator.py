@@ -13,6 +13,10 @@ def subtract(a, b):
     """Return the difference of a and b."""
     return round(a - b, 2)
 
+def multiply(a, b):
+    """Return the product of a and b."""
+    return a * b
+
 def get_number(prompt):
     """
     Prompt the user for a number, re-prompting on invalid (non-numeric) input.
