@@ -6,7 +6,7 @@ A menu-driven Python calculator built with Git and GitHub branching.
 
 def add(a, b):
     """Return the sum of a and b."""
-    return a + b
+    return round(a + b, 2)
 
 
 def get_number(prompt):
