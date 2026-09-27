@@ -15,7 +15,7 @@ def subtract(a, b):
 
 def multiply(a, b):
     """Return the product of a and b."""
-    return a * b
+    return round(a * b, 2)
 
 def get_number(prompt):
     """
