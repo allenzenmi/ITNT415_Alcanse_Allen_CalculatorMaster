@@ -17,6 +17,12 @@ def multiply(a, b):
     """Return the product of a and b."""
     return round(a * b, 2)
 
+def divide(a, b):
+    """Return the quotient of a and b. Raises ZeroDivisionError if b is 0."""
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero.")
+    return a / b
+
 def get_number(prompt):
     """
     Prompt the user for a number, re-prompting on invalid (non-numeric) input.
