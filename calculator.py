@@ -4,6 +4,11 @@ A menu-driven Python calculator built with Git and GitHub branching.
 """
 
 
+def add(a, b):
+    """Return the sum of a and b."""
+    return a + b
+
+
 def get_number(prompt):
     """
     Prompt the user for a number, re-prompting on invalid (non-numeric) input.
@@ -53,7 +58,13 @@ def main():
         num1 = get_number("Enter the first number: ")
         num2 = get_number("Enter the second number: ")
 
-        # Feature branches will add the operation logic here (choice == "1" through "4")
+        try:
+            if choice == "1":
+                result = add(num1, num2)
+                symbol = "+"
+                print(f"\nResult: {num1} {symbol} {num2} = {result}")
+        except ZeroDivisionError as error:
+            print(f"\nError: {error}")
 
         again = input("\nWould you like to perform another calculation? (y/n): ").strip().lower()
         if again != "y":
