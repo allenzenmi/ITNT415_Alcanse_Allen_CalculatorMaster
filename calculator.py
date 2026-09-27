@@ -21,7 +21,7 @@ def divide(a, b):
     """Return the quotient of a and b. Raises ZeroDivisionError if b is 0."""
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero.")
-    return a / b
+    return round(a / b, 2)
 
 def get_number(prompt):
     """
