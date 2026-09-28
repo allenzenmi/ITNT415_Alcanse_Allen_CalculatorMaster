@@ -81,6 +81,14 @@ def main():
                 result = subtract(num1, num2)
                 symbol = "-"
                 print(f"\nResult: {num1} {symbol} {num2} = {result}")
+            elif choice == "3":
+                result = multiply(num1, num2)
+                symbol = "*"
+                print(f"\nResult: {num1} {symbol} {num2} = {result}")
+            elif choice == "4":
+                result = divide(num1, num2)
+                symbol = "/"
+                print(f"\nResult: {num1} {symbol} {num2} = {result}")
         except ZeroDivisionError as error:
             print(f"\nError: {error}")
 
